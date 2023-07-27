@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+count=1
+while [ $count -le 10 ]; do
+if [ $count -ne 4 ] && [ $count -ne 8 ]; then
+	echo "Best School"
+	count=$((count + 1))
+elif [ $count -eq 4 ]; then
+	echo "bad luck"
+	count=$((count + 1))
+else
+	echo "good luck"
+	count=$((count + 1))
+  fi
+done
