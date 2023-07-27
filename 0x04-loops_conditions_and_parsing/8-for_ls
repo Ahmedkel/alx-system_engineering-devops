@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Loop through each file in the current directory
+for file in *; do
+    # Check if the file is not hidden (doesn't start with a dot)
+    if [[ ! "$file" == .* ]]; then
+        part_after_dash="${file#*-}"
+        echo "$part_after_dash"
+    fi
+done
