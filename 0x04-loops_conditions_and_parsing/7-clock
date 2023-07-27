@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
+# This script is displaying clock
 min=1
 hour=0
 while [ $hour -le 12 ]; do
