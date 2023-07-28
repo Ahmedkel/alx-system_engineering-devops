@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Display process tree
 
-ps -ef --forest
+ps -auxf
