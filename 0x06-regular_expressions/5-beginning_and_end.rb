@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-print ARGV[0].scan(/\\bh.n\\b/).join
+if ARGV[0] =~ /^h.n$/
+  puts ARGV[0]
+end
