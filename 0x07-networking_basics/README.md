@@ -120,7 +120,7 @@ In this project we will mainly focus on:
 
 The image bellow describes more concretely how you can relate to every level.
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/0fc96bd99faa7941b18bcae4c5f90c6acd11791d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T085224Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ecd2b2a63d408637d44ddc86dd2f55188df99226246d0d9154bb48985fda098b)
+![](alx-system_engineering-devops/0x07-networking_basics/src/4e6a0ad87a65d7054248.png)
 
 Questions:
 
