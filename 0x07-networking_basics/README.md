@@ -1,4 +1,12 @@
-# Project 0x07. Networking basics 0
+# 0x07. Networking basics #0
+
+DevOpsNetwork
+
+-   By: Sylvain Kalache
+-   Weight: 1
+-   Project will start Aug 2, 2023 4:00 AM, must end by Aug 4, 2023 4:00 AM
+-   Checker will be released at Aug 4, 2023 4:00 AM
+-   An auto review will be launched at the deadline
 
 ## Resources
 
@@ -63,7 +71,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 ### Copyright - Plagiarism
 
 -   You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
--   You will not be able to meet the objectives of this or any following project by copying and pasting someone elseâ€™s work.
+-   You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
 -   You are not allowed to publish any content of this project.
 -   Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
@@ -102,6 +110,10 @@ Source for question 1 [here](https://intranet.alxswe.com/rltoken/iEZZ6SemL1HJHja
 
 ## Tasks
 
+### 0\. OSI model
+
+mandatory
+
 OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
 
 It is organized from the lowest level to the highest level:
@@ -109,9 +121,9 @@ It is organized from the lowest level to the highest level:
 -   The lowest level: layer 1 which is for transmission on physical layers with electrical impulse, light or radio signal
 -   The highest level: layer 7 which is for application specific communication like SNMP for emails, HTTP for your web browser, etc
 
-Keep in mind that the OSI model is a concept, itâ€™s not even tangible. The OSI model doesnâ€™t perform any functions in the networking process. It is a conceptual framework so we can better understand complex interactions that are happening. Most of the functionality in the OSI model exists in all communications systems.
+Keep in mind that the OSI model is a concept, it’s not even tangible. The OSI model doesn’t perform any functions in the networking process. It is a conceptual framework so we can better understand complex interactions that are happening. Most of the functionality in the OSI model exists in all communications systems.
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/4e6a0ad87a65d7054248.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T085224Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f028ccb3e583c190ba39d5e24783c3356ebbb5145ae29ff4d69bcff598f04e42)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/4e6a0ad87a65d7054248.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230803T120041Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3e8a3c08ad72e739d6fd2369e79b502f5eb24474aedb0e9dae8f49f9786f2e0c)
 
 In this project we will mainly focus on:
 
@@ -120,7 +132,7 @@ In this project we will mainly focus on:
 
 The image bellow describes more concretely how you can relate to every level.
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/4e6a0ad87a65d7054248.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T091151Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=689d081a3a8a14c4402389b22116c62da3287e8f17ce91280c90d9fe3c3dd89e)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/0fc96bd99faa7941b18bcae4c5f90c6acd11791d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230803T120041Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4d85a5b232da09c88bb9215fb63e7b5f046a75d131a882ba02d658c85ce1eb97)
 
 Questions:
 
@@ -142,11 +154,19 @@ How is the OSI model organized?
 -   Directory: `0x07-networking_basics`
 -   File: `0-OSI_model`
 
+Done?! Help
+
+×
+
+#### Learners who are done with "0. OSI model"
+
+Get a sandbox
+
 ### 1\. Types of network
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T085224Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6c7abb160e73e70782790b36594e29cd0382b3a17cc2fd7875ce0be35f31c604)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230803T120041Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=71c941df956c6d53d7273c2f105c0180f814f309a6b0a7c0068b40e96779d946)
 
 LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
 
@@ -176,11 +196,19 @@ What network do you use when you browse www.google.com from your smartphone (not
 -   Directory: `0x07-networking_basics`
 -   File: `1-types_of_network`
 
+Done?! Help
+
+×
+
+#### Learners who are done with "1. Types of network"
+
+Get a sandbox
+
 ### 2\. MAC and IP address
 
 mandatory
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T085224Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c3a71a8ea51d14d6eb7b18cad80754d8cd9e75d80a562fa9534ca5f376d4af29)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230803T120041Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=7fa823423ffacc9bd38e04f20784d50eb25f69f4d9d2c282f0f1308e4f24782d)
 
 Questions:
 
@@ -202,9 +230,21 @@ What is an IP address?
 -   Directory: `0x07-networking_basics`
 -   File: `2-MAC_and_IP_address`
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T085224Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=dfd5aa66182576649e4578d2c7ca61e07209d967cc5564713c98d694e5f08737)
+Done?! Help
 
-Letâ€™s fill the empty parts in the drawing above.
+×
+
+#### Learners who are done with "2. MAC and IP address"
+
+Get a sandbox
+
+### 3\. UDP and TCP
+
+mandatory
+
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230803T120041Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=5f4f3f9e295a4906aaa7f3e53c62cd700f56746d0df073922afa6075172995da)
+
+Let’s fill the empty parts in the drawing above.
 
 Questions:
 
@@ -224,6 +264,14 @@ Questions:
 -   Directory: `0x07-networking_basics`
 -   File: `3-UDP_and_TCP`
 
+Done?! Help
+
+×
+
+#### Learners who are done with "3. UDP and TCP"
+
+Get a sandbox
+
 ### 4\. TCP and UDP ports
 
 mandatory
@@ -232,7 +280,7 @@ Once packets have been sent to the right network device using IP using either UD
 
 If we continue the comparison of a network device to your house, where IP address is like your postal address, UDP and TCP ports are like the windows and doors of your place. A TCP/UDP network device has 65535 ports. Some of them are officially reserved for a specific usage, some of them are known to be used for a specific usage (but nothing is officially declared) and the rest are free of use.
 
-While the full list of ports should not be memorized, it is important to know the most used ports, letâ€™s start by remembering 3 of them:
+While the full list of ports should not be memorized, it is important to know the most used ports, let’s start by remembering 3 of them:
 
 -   **22** for SSH
 -   **80** for HTTP
@@ -283,6 +331,14 @@ sylvain@ubuntu$
 -   Directory: `0x07-networking_basics`
 -   File: `4-TCP_and_UDP_ports`
 
+Done?! Help
+
+×
+
+#### Learners who are done with "4. TCP and UDP ports"
+
+Get a sandbox
+
 ### 5\. Is the host on the network
 
 mandatory
@@ -316,10 +372,10 @@ rtt min/avg/max/mdev = 7.570/10.682/13.679/2.546 ms
 sylvain@ubuntu$
 sylvain@ubuntu$ ./5-is_the_host_on_the_network
 Usage: 5-is_the_host_on_the_network {IP_ADDRESS}
-sylvain@ubuntu$
+sylvain@ubuntu$ 
 ```
 
-It is interesting to look at the `time` value, which is the time that it took for the ICMP request to go to the `8.8.8.8` IP and come back to my host. The IP `8.8.8.8` is owned by Google, and the quickest roundtrip between my computer and Google was 7.57 ms which is pretty fast, which is a sign that the network path between my computer and Googleâ€™s datacenter is in good shape. A slow ping would indicate a slow network.
+It is interesting to look at the `time` value, which is the time that it took for the ICMP request to go to the `8.8.8.8` IP and come back to my host. The IP `8.8.8.8` is owned by Google, and the quickest roundtrip between my computer and Google was 7.57 ms which is pretty fast, which is a sign that the network path between my computer and Google’s datacenter is in good shape. A slow ping would indicate a slow network.
 
 Next time you feel that your connection is slow, try the `ping` command to see what is going on!
 
@@ -329,4 +385,4 @@ Next time you feel that your connection is slow, try the `ping` command to see w
 -   Directory: `0x07-networking_basics`
 -   File: `5-is_the_host_on_the_network`
 
-Copyright Â© 2023 ALX, All rights reserved.
+Copyright © 2023 ALX, All rights reserved.
