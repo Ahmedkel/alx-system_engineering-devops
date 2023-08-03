@@ -120,7 +120,7 @@ In this project we will mainly focus on:
 
 The image bellow describes more concretely how you can relate to every level.
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/4e6a0ad87a65d7054248.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T091151Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=689d081a3a8a14c4402389b22116c62da3287e8f17ce91280c90d9fe3c3dd89e)
+![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/0fc96bd99faa7941b18bcae4c5f90c6acd11791d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230802%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230802T085224Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ecd2b2a63d408637d44ddc86dd2f55188df99226246d0d9154bb48985fda098b)
 
 Questions:
 
@@ -309,7 +309,6 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 64 bytes from 8.8.8.8: icmp_seq=3 ttl=63 time=7.83 ms
 64 bytes from 8.8.8.8: icmp_seq=4 ttl=63 time=11.3 ms
 64 bytes from 8.8.8.8: icmp_seq=5 ttl=63 time=7.57 ms
-
 --- 8.8.8.8 ping statistics ---
 5 packets transmitted, 5 received, 0% packet loss, time 4006ms
 rtt min/avg/max/mdev = 7.570/10.682/13.679/2.546 ms
