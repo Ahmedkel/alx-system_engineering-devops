@@ -4,5 +4,6 @@
 private_key=~/.ssh/school
 user="ubuntu"
 server_ip="100.25.142.90"
+Arg="-l"
 
-ssh -i "$private_key" "$user@$server_ip"
+ssh -i "$private_key" "$Arg" "$user" "$server_ip"
