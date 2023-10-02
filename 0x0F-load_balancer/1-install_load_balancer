@@ -11,8 +11,7 @@ install_and_configure_haproxy() {
         apt-get -y install haproxy
 
 	cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.orig
-        #cp /etc/haproxy/haproxy.cfg{,.orig}
-	cat <<EOL >> /etc/haproxy/haproxy.cfg
+        cat <<EOL >> /etc/haproxy/haproxy.cfg
 frontend haproxy_balancer
     bind *:80                                               mode http                                               default_backend webservers
                                                         backend webservers                                          balance roundrobin
@@ -23,4 +22,5 @@ EOL
         service haproxy restart
 
 }
-                                                        install_and_configure_haproxy
+
+install_and_configure_haproxy
