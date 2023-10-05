@@ -27,4 +27,3 @@ else
     audit_subdomain "$1" "web-01"
     audit_subdomain "$1" "web-02"
 fi
-
