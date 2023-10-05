@@ -13,6 +13,6 @@ if [ "$#" -eq 2 ]; then
     get_info "$2.$1" "$2"
 else
     for sub in www lb-01 web-01 web-02; do
-        gett_info "${sub}.$1" "$sub"
+        get_info "${sub}.$1" "$sub"
     done
 fi
