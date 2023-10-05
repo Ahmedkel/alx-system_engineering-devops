@@ -1,29 +1,18 @@
 #!/usr/bin/env bash
-# display information about subdomains
+# Bash script to get subdomain information
 
-# Define the function to query and display DNS information
-audit_subdomain() {
-    local domain="$1"
-    local subdomain="$2"
+get_info() {
+    local full_subdomain="$1"
+    local sub="$2"
 
-    # Query the DNS records using dig
-    dns_result=$(dig "${subdomain}.${domain}" | grep -A1 'ANSWER SECTION:')
-
-    # Extract the record type and destination IP using awk
-    record_type=$(echo "$dns_result" | awk '/IN\s/ {print $4}')
-    destination=$(echo "$dns_result" | awk '/A\s/ {print $5}')
-
-    # Output the information in the required format
-    echo "The subdomain ${subdomain} is a ${record_type} record and points to ${destination}"
+    dig "$full_subdomain" | awk -v subdomain="$sub" -F" " '/ANSWER SECTION:/ { getline; print "The subdomain " subdomain " is a " $4 " record and points to " $5 }'
 }
 
-# Check if both domain and subdomain arguments are provided
-if [ $# -eq 2 ]; then
-    audit_subdomain "$1" "$2"
+# Check for correct number of arguments
+if [ "$#" -eq 2 ]; then
+    get_info "$2.$1" "$2"
 else
-    # Query and display information for default subdomains
-    audit_subdomain "$1" "www"
-    audit_subdomain "$1" "lb-01"
-    audit_subdomain "$1" "web-01"
-    audit_subdomain "$1" "web-02"
+    for sub in www lb-01 web-01 web-02; do
+        gett_info "${sub}.$1" "$sub"
+    done
 fi
