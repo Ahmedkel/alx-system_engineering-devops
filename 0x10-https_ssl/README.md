@@ -123,8 +123,6 @@ sylvain@ubuntu$
 -   Directory: `0x10-https_ssl`
 -   File: `0-world_wide_web`
 
-Done?! Help Check your code Get a sandbox
-
 ### 1\. HAproxy SSL termination
 
 mandatory
