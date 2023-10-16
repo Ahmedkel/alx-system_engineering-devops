@@ -1,1 +1,10 @@
 #!/usr/bin/env bash
+
+# Change nginx user in the configuration file
+sed -i 's/user\s*nginx;/user nginx nginx;/' /etc/nginx/nginx.conf
+
+# Change ownership of necessary files to nginx user
+chown -R nginx:nginx /var/www/html
+
+# Restart nginx service
+service nginx restart
