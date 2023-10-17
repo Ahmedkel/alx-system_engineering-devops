@@ -12,4 +12,4 @@ mysqldump -u root -p"$MYSQL_ROOT_PASSWORD" --all-databases > backup.sql
 tar -czvf "$DATE.tar.gz" backup.sql
 
 # Clean up the temporary MySQL dump file
-rm backup.sql
+# rm backup.sql
