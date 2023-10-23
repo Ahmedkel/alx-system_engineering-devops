@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ Fetch employee data and covert it to JSON """
+import json
 import requests
 import sys
-import json
 
 
 def get_todo_list_progress(employee_id):
