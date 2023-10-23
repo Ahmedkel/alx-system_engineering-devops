@@ -18,7 +18,8 @@ def export_all_tasks():
 
         # Fetch todo data for each employee
         todo_response = requests.get(
-                f'https://jsonplaceholder.typicode.com/todos?userId={employee_id}'
+                f'https://jsonplaceholder.typicode.com/todos'
+                f'?userId={employee_id}'
                 )
         todo_url = base_url + todo_endpoint
         todo_response = requests.get(todo_url)
