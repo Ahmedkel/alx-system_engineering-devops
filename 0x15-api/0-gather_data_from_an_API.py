@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Fetch employee data """
 import requests
 import sys
 
