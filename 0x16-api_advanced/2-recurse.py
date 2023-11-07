@@ -6,21 +6,23 @@ all hot articles for a given subreddit.
 import requests
 
 
-def recurse(subreddit, hot_list=[], after=""):
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json?after={after}"
-    headers = {"User-Agent": "custom"}
+def recurse(subreddit, hot_list=[], after=''):
+    base_url = f'https://www.reddit.com/r/{subreddit}/hot.json'
+    headers = {'User-Agent': 'custom'}
+    params = {'limit': 100, 'after': after}
 
-    response = requests.get(url, headers=headers)
+    response = requests.get(base_url, headers=headers, params=params,
+                            allow_redirects=False)
 
-    if response.status_code != 200:
-        return None
+    if response.status_code == 200:
+        data = response.json()
+        posts = data['data']['children']
+        hot_list.extend(post['data']['title'] for post in posts)
 
-    data = response.json()["data"]
-    hot_list.extend([post["data"]["title"] for post in data["children"]])
-
-    after = data["after"]
-
-    if after is None:
+        after = data['data']['after']
+        if after is not None:
+            return recurse(subreddit, hot_list, after)
         return hot_list
-    else:
-        return recurse(subreddit, hot_list, after)
+    elif response.status_code in (302, 404):
+        return None
+    return None
